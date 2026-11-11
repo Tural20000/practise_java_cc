@@ -20,8 +20,8 @@ public class Account {
 		this.accountNumber = accountNumber;
 		this.owner = owner;
 		this.type = type;
-		this.balance = balance;
-		this.status = status;
+		this.balance = BigDecimal.ZERO;
+		this.status = AccountStatus.ACTIVE;
 		this.createdAt = LocalDateTime.now();
 
 	}
@@ -45,6 +45,10 @@ public class Account {
 
 	public BigDecimal getBalance() {
 		return balance;
+	}
+
+	public void setBalance(BigDecimal balance) {
+		this.balance = balance;
 	}
 
 	public AccountType getType() {
