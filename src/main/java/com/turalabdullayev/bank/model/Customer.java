@@ -10,7 +10,7 @@ public class Customer {
 	private final String phone;
 	private final LocalDateTime createdAt;
 
-	public Customer(String fullName, String email, String phone) { /// Construktor
+	public Customer(String fullName, String email, String phone) {
 		this.fullName = fullName;
 		this.email = email;
 		this.phone = phone;
